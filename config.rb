@@ -1,3 +1,5 @@
+require "lib/image_helpers"
+
 ###
 # Page options, layouts, aliases and proxies
 ###
@@ -23,19 +25,22 @@ configure :development do
   activate :livereload
 end
 
+activate :directory_indexes
+
 ###
 # Helpers
 ###
+helpers ImageHelpers
 
-# Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+# activate :external_pipeline,
+#   name: :broccoli,
+#   command: build? ? './node_modules/webpack/bin/webpack.js --bail' : './node_modules/webpack/bin/webpack.js --watch -d',
+#   source: ".tmp/dist",
+#   latency: 1
 
 # Build-specific configuration
 configure :build do
+  activate :relative_assets
   # Minify CSS on build
   # activate :minify_css
 
