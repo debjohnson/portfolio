@@ -1,7 +1,8 @@
 header.nav
   ul.nav__list
   	li.nav__item.nav__item--logo
-  		= image_tag "slice1.svg"
+      = link_to "index.html" do
+        = image_tag "header-logo.svg"
     li.nav__item
       = link_to "Work", "/projects/image_management.html"
     li.nav__item
