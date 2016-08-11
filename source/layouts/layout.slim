@@ -9,7 +9,9 @@ html
     title= current_page.data.title || "Middleman"
 
     = stylesheet_link_tag :site
+    = javascript_include_tag :site
 
   body class="#{page_classes}"
   	= render_partial 'header'
     = yield
+    = render_partial 'footer'
