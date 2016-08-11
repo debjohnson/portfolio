@@ -1,0 +1,26 @@
+.hero {
+  padding-top: 160px;
+  padding-bottom: 250px;
+
+  text-align: center;
+  color: $gray;
+}
+
+.hero__name {
+  display: inline-block;
+  margin-right: 20px;
+  padding-right: 20px;
+
+  border-right: 1px solid #868686;
+
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.hero__description {
+  display: inline-block;
+
+  font-weight: 100;
+  letter-spacing: 1px;
+}

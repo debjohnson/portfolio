@@ -1,0 +1,45 @@
+.section {
+  padding: $xl 0 0;
+}
+
+.section--project {
+  &:nth-child(even) {
+    background-color: $light-background;
+  }
+}
+
+.section__content {
+  max-width: $site-max-width;
+  margin: auto;
+}
+
+.section__content--constrained {
+  max-width: 700px;
+  margin: auto;
+}
+
+.section__title {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.section__subtitle {
+  font-size: 24px;
+  color: darken($light-gray, 20);
+}
+
+.section__divider {
+  text-align: center;
+  padding: $large 0;
+  color: $gray;
+
+  &:before {
+    content: '...';
+    display: inline-block;
+    margin-left: .6em;
+    position: relative;
+    top: -22px;
+    font-size: 20px;
+    letter-spacing: 6.7px;
+  }
+}

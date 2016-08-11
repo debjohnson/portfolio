@@ -1,0 +1,25 @@
+.nav__list {
+	* + * {
+		padding-left: 40px;
+	}
+
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.nav__item {
+	font-size: 15px;
+	text-transform: uppercase;
+	color: $dark-gray;
+	font-family: $header-font-family;
+	
+	a {
+		text-decoration: none;
+	}
+}
+
+.nav__item--logo {
+	margin-right: auto;
+	width: 30px;
+}

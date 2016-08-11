@@ -1,0 +1,35 @@
+.social-icons {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  margin: $medium 0;
+  justify-content: center;
+
+  a {
+    border: 0;
+  }
+}
+
+.social-icon__link {
+  &:not(:last-child) {
+    margin-right: $medium;
+  }
+}
+
+%social-icon {
+  width: 26px;
+  height: 26px;
+
+  transition: fill 0.3s;
+  fill: $gray;
+}
+
+@each $brand, $color in $social-colors {
+  .social-icon--#{$brand} {
+    @extend %social-icon;
+
+    &:hover {
+      fill: $color;
+    }
+  }
+}
