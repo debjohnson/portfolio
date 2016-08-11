@@ -1,0 +1,28 @@
+main
+  .hero.section
+    h1.hero__name Deb Johnson
+    .hero__description Product Designer in San Francisco
+
+  .section.section--project
+    .section__content
+      .section__title
+        h1 Featured Projects
+
+      .project
+        .project__image.project--im__image
+          = image_tag "image_management/imp-main.png", class: ""
+
+        .project__info
+          .project__title Image Search Library
+          p.project__summary An internal tool to make it easier for Neon's team members to browse and search for images.
+
+          = link_to "Learn More", "/projects/image_management.html", class: "project__link"
+
+  .section.section--project
+    .section__content
+      .project
+          p Case study comings soon!
+        .project__image.project--ad__image
+          = image_tag "image_management/dashboard.png", class: ""
+        .project__info
+          .project__title Analytics Dashboard
