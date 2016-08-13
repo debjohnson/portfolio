@@ -11,3 +11,17 @@
 	  text-align: right;
 	}
 }
+
+.bullet {
+  &:before {
+    content: "•";
+    padding-top: 4px;
+    padding-right: 15px;
+    position: absolute;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 58px;
+    margin-left: -58px;
+    text-align: right;
+  }
+}
