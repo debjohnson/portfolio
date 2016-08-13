@@ -1,20 +1,24 @@
 $site-max-width: 1000px;
 
-$light-gray: #d0d0d0;
-$gray: #757575;
+// Colors
+
+$light-gray: #D0D0D0;
+$gray: #606060;
 $dark-gray: #404040;
 $light-background: #F4F4F4;
-$black: #000000;
+$slate: rgba(0,0,0,.8); 
+$bondi-blue: #2fa5c6;
 
+$base-accent-color: $bondi-blue;
 $base-border-color: $light-gray;
 
 // Typography
 
-$base-font-size: 18px;
 $base-font-family: 'Lato', sans-serif;
 $header-font-family: 'Roboto', sans-serif;
-$base-font-color: #606060;
+$base-font-size: 18px;
 $base-line-height: 1.7;
+$base-font-color: $gray;
 
 // Sizes
 
@@ -26,15 +30,17 @@ $xl: 80px;
 
 // Media queries
 
-$tablet-min: new-breakpoint(min-width 769px);
-$tablet-max: new-breakpoint(max-width 1024px);
+$mobile: "(max-width: 480px)";
+$tablet-min: "(max-width: 767px)";
 $tablet: "(min-width: 768px) and (max-width: 1023px)";
-$lap: new-breakpoint(min-width 1025px);
-$desktop: new-breakpoint(min-width 1280px);
+$laptop: "(min-width 1024px)";
+$desktop: "(min-width 1280px)";
+
+// Sass maps
 
 $image-backgrounds: (
-  im__image: #6F7DA1,
-  ad__image: $light-gray,
+  im__image: #7385b1,
+  ad__image: #45a6ad,
 );
 
 $social-colors: (
