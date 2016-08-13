@@ -1,29 +1,32 @@
 main
-  .hero.section
+  .hero.hero--huge.section
     h1.hero__name Deb Johnson
     .hero__description Product Designer in San Francisco
 
-  .section.section--project
+  .project
+    .section__heading
+      h1 Featured Projects
+
+    .project__content
+      .project__image.project--im__image
+        = image_tag "image_management/imp-main.png", class: ""
+
+      .project__info
+        .project__title Image Search Library
+        p.project__summary An internal tool to make it easier for Neon's team members to browse and search for images.
+
+        = link_to "Case Study", "/projects/image_management.html", class: "project__link button--cta"
+
+  .project
+    .project__content
+      .project__image.project--ad__image
+        = image_tag "image_management/dashboard.png", class: ""
+      .project__info
+        .project__title Analytics Dashboard
+        p.project__summary Case study comings soon!
+
+  .section.section--centered
     .section__content
-      .section__title
-        h1 Featured Projects
-
-      .project
-        .project__image.project--im__image
-          = image_tag "image_management/imp-main.png", class: ""
-
-        .project__info
-          .project__title Image Search Library
-          p.project__summary An internal tool to make it easier for Neon's team members to browse and search for images.
-
-          = link_to "Learn More", "/projects/image_management.html", class: "project__link"
-
-  .section.section--project
+      p I'm a self-taught product designer and front-end developer (HTML/CSS). I enjoy making simple and enjoyable products that solve problems for people.
     .section__content
-      .project
-        .project__image.project--ad__image
-          = image_tag "image_management/dashboard.png", class: ""
-        .project__info
-          .project__title Analytics Dashboard
-          p Case study comings soon!
-        
+      = link_to "More About Me >", "/about.html", class: "button--cta"
