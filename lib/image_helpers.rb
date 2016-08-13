@@ -30,4 +30,10 @@ module ImageHelpers
       )
     end
   end
+
+  def zoomable_image(image, options = {})
+    link_to(image_path(image), class: "js-img-zoom") do
+      image_tag(image, class: options[:class])
+    end
+  end
 end
