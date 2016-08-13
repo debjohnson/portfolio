@@ -1,0 +1,26 @@
+button {
+  background-color: white;
+  border: 1px solid $gray;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.button--cta {
+  padding: 8px 14px;
+  border-radius: 5px;
+  border: 1.5px solid lighten($gray, 20);
+  font-size: $small;
+  cursor: pointer;
+
+
+  color: lighten($gray, 10);
+  font-weight: 500;
+
+  &:hover {
+    border: 1.5px solid $base-accent-color;
+    
+      color: $base-accent-color;
+  }
+}
