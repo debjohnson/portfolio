@@ -1,31 +1,46 @@
 .section {
-  padding: $xl 0 0;
-}
-
-.section--project {
-  &:nth-child(even) {
-    background-color: $light-background;
-  }
+  padding: $large 0;
+  margin-bottom: $large;
 }
 
 .section__content {
-  max-width: $site-max-width;
-  margin: auto;
-}
-
-.section__content--constrained {
   max-width: 700px;
   margin: auto;
+
+  @media #{$tablet-min}, #{$mobile} {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+}
+
+.section--centered {
+  border-top: 1px solid $base-border-color;
+  margin-bottom: 0;
+}
+
+.section__heading {
+  margin-bottom: 80px;
+  text-align: center;
+
+  @media #{$tablet-min} {
+    margin-top: $medium;
+    margin-bottom: $large;
+  }
 }
 
 .section__title {
-  margin-bottom: 80px;
+  margin-bottom: $large;
   text-align: center;
 }
 
 .section__subtitle {
   font-size: 24px;
   color: darken($light-gray, 20);
+  margin-top: $medium;
+}
+
+.section__wrapper {
+  margin-top: $xl;
 }
 
 .section__divider {
@@ -43,3 +58,5 @@
     letter-spacing: 6.7px;
   }
 }
+
+ 
