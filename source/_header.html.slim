@@ -1,13 +1,8 @@
 header.nav
-  ul.nav__list
-  	li.nav__item.nav__item--logo
-      = link_to "index.html" do
-        = image_tag "header-logo.svg"
-    li.nav__item
-      = link_to "Work", "/projects/image_management.html"
-    li.nav__item
-      = link_to "About", "/about.html"
-    li.nav__item
-      = link_to "Writing", "https://medium.com/@debjohnson"
-    li.nav__item
-      = mail_to "deborah.max.johnson@gmail.com", "Contact"
+  = link_to "index.html", class: "nav__item--logo" do
+    = inline_svg "header-logo", class: "nav__item--logo"
+  .nav__list
+    = link_to "Work", "/projects/image_management.html", class: "nav__item"
+    = link_to "About", "/about.html", class: "nav__item"
+    = link_to "Writing", "https://medium.com/@debjohnson", class: "nav__item"
+    = mail_to "deborah.max.johnson@gmail.com", "Contact", class: "nav__item"
