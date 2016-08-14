@@ -12,6 +12,10 @@ html {
   }
 }
 
+body {
+  margin: 0;
+}
+
 header {
   text-align: center;
 }
@@ -22,12 +26,16 @@ h1, h2, h3, h4 {
   margin: 0 0 0.75rem;
 }
 
+h1 {
+  font-size: 2em;
+}
+
 h2 {
   font-size: 2em;
 }
 
 h3 {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1.3em;
   letter-spacing: 0.5;
 }
@@ -36,7 +44,15 @@ a {
   text-decoration: none;
   color: $base-font-color;
   font-weight: 100;
+  -webkit-text-decoration-skip: objects;
+
+  &:active,
+  &:hover {
+    outline-width: 0;
+  }
 }
+
+
 
 p {
   font-family: $base-font-family;
@@ -64,4 +80,9 @@ li {
 
 img {
   width: 100%;
+  border-style: none;
+}
+
+strong {
+  font-weight: bolder;
 }
