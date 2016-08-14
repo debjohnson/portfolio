@@ -3,6 +3,9 @@ main
     h1.hero__name Deb Johnson
     .hero__description Product Designer in San Francisco
 
+  .section.section--centered
+    .section__content
+      p I'm Deb, a product designer with a passion for intuitive and elegant design. I use design thinking and user-centered design approaches to solve real problems and deliver great user experiences.
   .project
     .section__heading
       h1 Featured Projects
@@ -12,7 +15,7 @@ main
         = image_tag "image_management/imp-main.png", class: ""
 
       .project__info
-        .project__title Image Search Library
+        h2.project__title Image Search Library
         p.project__summary An internal tool to make it easier for Neon's team members to browse and search for images.
 
         = link_to "Case Study", "/projects/image_management.html", class: "project__link button--cta"
@@ -22,7 +25,7 @@ main
       .project__image.project--ad__image
         = image_tag "image_management/dashboard.png", class: ""
       .project__info
-        .project__title Analytics Dashboard
+        h2.project__title Analytics Dashboard
         p.project__summary Case study comings soon!
 
   .section.section--centered
