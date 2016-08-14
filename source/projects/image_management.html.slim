@@ -14,12 +14,18 @@ main
     .section__divider
 
   	.section__content
-      .section__title
-        h1 Process
+      h1.section__title Process
       
       .section__subtitle Understand the Problem
       p Working with Neon’s head of marketing, we began by understanding and internalizing the problem. We did user interviews with team members to learn how they were currently solving the problem of getting images, and what (if anything) was frustrating about the current process. Understanding their workflows helped us identify “jobs to be done,” as well as pain points and areas for opportunity.
       p One of the biggest areas of frustration was finding images to use in things like blog posts, marketing materials, and investor pitch decks. Depending on the use case, people often needed images that met specific criteria, such as images from a particular customer or images with high Neon “scores” (rankings). Lack of search, sort, or a way to view images and data in one place meant having to manually comb through folders of images and map them to data in text files or complicated excel sheets.
+      
+      .image-group
+        .image-wrapper
+          = image_tag "image_management/storyboards.jpg"
+        .image-wrapper
+          = image_tag "image_management/team-sketch.jpg"
+      
       p Given the frustration surrounding this issue, we decided that the intended outcome for our prototype would be to make it easy to find the right Neon images and view related data.
 
       = image_tag "image_management/whiteboard.png", class: "inline-image"
@@ -28,11 +34,14 @@ main
       p With a clear understanding of the challenge, we began diverging on possible solutions. We included the whole Neon team in this phase to get a broad range of perspectives from the actual users.
 
       = image_tag "image_management/team-sketch.jpg", class: "inline-image"
+      
 
       p We started by generating “How Might We” questions based on jobs to be done (identified earlier). Working individually, we sketched ideas using time-limited exercises including mind maps, Crazy 8s, and storyboards. We put the sketches on the wall and used silent critique and dot voting to visually identify our favorite ideas. As a final step, I led a group speed critique where we discussed the highlights of each solution and raised any concerns.
 
       .section__subtitle Decide
       p Although there were many strong ideas, we could only prototype one solution. Our head of marketing — who had the most direct experience with the problem — made the final decision. The concept she chose was an image “library” with powerful search capabilities and different ways to organize images.
+
+      = image_tag "image_management/storyboards.jpg", class: "inline-image"
 
       .section__subtitle Prototype and Learn
       p In the final phase of the process, I created a clickable InVision prototype to test with users. I explored multiple design approaches for how to structure search, sort, and filter capabilities, and different ways of surfacing and displaying data. I researched methods other web products have used to gather inspiration.
