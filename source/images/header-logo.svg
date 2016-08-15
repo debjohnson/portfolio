@@ -5,9 +5,9 @@
     <path d="M21.13 12.314h2.69v15.513h-2.69z"/>
     <circle cx="22.474" cy="8.987" r="1.993"/>
     <defs>
-        <linearGradient x1="-0.000618517461%" y1="16.3511906%" x2="100.000095%" y2="99.9994053%" id="hover-gradient">
-            <stop stop-color="#3386BB" offset="0%"></stop>
-            <stop stop-color="#53A47C" offset="100%"></stop>
+        <linearGradient x1="0%" y1="16.3510597%" x2="100.000143%" y2="100.000715%" id="hover-gradient">
+            <stop stop-color="#0891E6" offset="0%"></stop>
+            <stop stop-color="#3BBC7B" offset="100%"></stop>
         </linearGradient>
     </defs>
   </g>
