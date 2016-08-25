@@ -1,8 +1,8 @@
 main
-  .section
-    .hero.hero__background-image
-      h1.hero__title Neon Image Search Library
-      h4.hero__subtitle UX Design, User research, Visual Design, Prototyping
+  .hero.hero__background-image
+    h1.hero__title Neon Image Search Library
+    h4.hero__subtitle UX Design, User research, Visual Design, Prototyping
+
   .section
     .section__content
       h3 Challenge
@@ -15,17 +15,15 @@ main
 
   	.section__content
       h1.section__title Process
-      
+
       .section__subtitle Understand the Problem
       p Working with Neon’s head of marketing, we began by understanding and internalizing the problem. We did user interviews with team members to learn how they were currently solving the problem of getting images, and what (if anything) was frustrating about the current process. Understanding their workflows helped us identify “jobs to be done,” as well as pain points and areas for opportunity.
+
       p One of the biggest areas of frustration was finding images to use in things like blog posts, marketing materials, and investor pitch decks. Depending on the use case, people often needed images that met specific criteria, such as images from a particular customer or images with high Neon “scores” (rankings). Lack of search, sort, or a way to view images and data in one place meant having to manually comb through folders of images and map them to data in text files or complicated excel sheets.
-      
-      .image-group
-        .image-wrapper
-          = image_tag "image_management/storyboards.jpg"
-        .image-wrapper
-          = image_tag "image_management/team-sketch.jpg"
-      
+
+      = image_tag "image_management/spreadsheet.png"
+      figcaption.inline-image__caption One of the existing methods for finding images was copying and pasting Amazon S3 links one at a time from a spreadsheet into the browser.
+
       p Given the frustration surrounding this issue, we decided that the intended outcome for our prototype would be to make it easy to find the right Neon images and view related data.
 
       = image_tag "image_management/whiteboard.png", class: "inline-image"
@@ -33,8 +31,8 @@ main
       .section__subtitle Diverge and Converge
       p With a clear understanding of the challenge, we began diverging on possible solutions. We included the whole Neon team in this phase to get a broad range of perspectives from the actual users.
 
-      = image_tag "image_management/team-sketch.jpg", class: "inline-image"
-      
+      = image_tag "image_management/team-sketch.jpg"
+      figcaption.inline-image__caption The team sketching ideas during a "Crazy 8" exercise.
 
       p We started by generating “How Might We” questions based on jobs to be done (identified earlier). Working individually, we sketched ideas using time-limited exercises including mind maps, Crazy 8s, and storyboards. We put the sketches on the wall and used silent critique and dot voting to visually identify our favorite ideas. As a final step, I led a group speed critique where we discussed the highlights of each solution and raised any concerns.
 
@@ -47,14 +45,21 @@ main
       p In the final phase of the process, I created a clickable InVision prototype to test with users. I explored multiple design approaches for how to structure search, sort, and filter capabilities, and different ways of surfacing and displaying data. I researched methods other web products have used to gather inspiration.
       p We then interviewed users in order to validate different approaches and ideas. I iterated based on feedback to work towards the final design.
 
-      = zoomable_image "image_management/imp-main.png", class: "inline-image--bordered"
-      = zoomable_image "image_management/imp-sidebar.png", class: "inline-image--bordered"
-      = zoomable_image "image_management/tag-image.png", class: "inline-image--bordered"
+      .inline-image
+        = zoomable_image "image_management/imp-main.png"
+        figcaption.inline-image__caption Image library interface.
+
+      .inline-image
+        = zoomable_image "image_management/imp-sidebar.png"
+        figcaption.inline-image__caption Selected image shows corresponding meta data in sidebar.
+
+      .inline-image
+        = zoomable_image "image_management/tag-image.png"
+        figcaption.inline-image__caption Users can tag images to make it easier to find later.
+
+      .inline-image
+        = zoomable_image "image_management/alternate-view.png", class: "inline-image--bordered"
+        figcaption.inline-image__caption Alternate direction explored where data is displayed in a modal dialog.
 
       .section__subtitle Conclusions
       p Prototyping a solution allowed us to validate our assumptions and test features before investing the time and engineering resources to build a full implementation. Our design process prevented us from jumping straight into a solution without thoroughly understanding the problem we needed to solve.
-
-      .section__divider
-
-      .section__subtitle What I would have done differently
-      p Build the prototype with real data — both images and numerical data. I expect that edge cases will arise that weren’t originally accounted for in the design of the prototype which will need to be addressed once the product is built.
