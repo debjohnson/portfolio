@@ -5,7 +5,8 @@ main
 
   .section.section--centered
     .section__content
-      p I'm Deb, a product designer with a passion for intuitive and elegant design. I use design thinking and user-centered design approaches to solve real problems and deliver great user experiences.
+      p I'm Deb, a self-taught product designer with a passion for intuitive and elegant design. I use human-centered design approaches to deliver engaging user experiences that solve meaningful problems.
+      = link_to "More About Me", "/about", class: "button--cta--centered"
   .project
     .section__heading
       h1 Featured Projects
@@ -26,10 +27,32 @@ main
         = image_tag "image_management/dashboard.png", class: ""
       .project__info
         h2.project__title Analytics Dashboard
-        p.project__summary Case study comings soon!
+        p.project__summary Case study coming soon!
 
-  .section.section--centered
-    .section__content
-      p I'm a self-taught product designer and front-end developer (HTML/CSS). I enjoy making simple and enjoyable products that solve problems for people.
-    .section__content
-      = link_to "More About Me >", "/about.html", class: "button--cta"
+  .section
+      .section__content.mt--large
+        h1 Design Philosophy and Process
+        p Design, at its core, is about problem solving. I use a combination of design thinking and empathy to solve problems in a human-centered way. Some of the principles that guide my design process are:
+
+        ul
+          li.list--bulleted__item 
+            strong Understand the problem 
+            ' to be solved and the person/people experiencing the problem. Talk to users and identify “jobs to be done”
+          li.list--bulleted__item 
+            strong Collaborate cross-functionally 
+            ' to gain diverse perspectives
+          li.list--bulleted__item 
+            strong Prototype solutions 
+            ' to validate assumptions and explore product directions
+          li.list--bulleted__item 
+            strong Use feedback 
+            ' from the people you’re designing for to guide the next iteration of the solution
+        
+        h3 Skills/Tools
+        ul
+          li.list--bulleted__item Sketch
+          li.list--bulleted__item
+            = link_to "Affinity Designer", "https://affinity.serif.com/en-us/designer/"
+          li.list--bulleted__item Keynote
+          li.list--bulleted__item InVision
+          li.list--bulleted__item HTML / CSS
