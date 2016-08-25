@@ -12,15 +12,20 @@ button {
   border-radius: 5px;
   border: 1.5px solid lighten($gray, 20);
   font-size: $small;
+  font-weight: 100;
   cursor: pointer;
-
-
   color: lighten($gray, 10);
-  font-weight: 500;
+  display: inline-block;
+  align-self: flex-start;
 
   &:hover {
     border: 1.5px solid $base-accent-color;
     
       color: $base-accent-color;
   }
+}
+
+.button--cta--centered {
+  @extend .button--cta;
+  align-self: center;
 }

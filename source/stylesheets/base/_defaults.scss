@@ -43,16 +43,19 @@ h3 {
 a {
   text-decoration: none;
   color: $base-font-color;
-  font-weight: 100;
+  font-weight: 500;
   -webkit-text-decoration-skip: objects;
+
+
+  &:hover {
+    color: $bondi-blue;
+  }
 
   &:active,
   &:hover {
     outline-width: 0;
   }
 }
-
-
 
 p {
   font-family: $base-font-family;

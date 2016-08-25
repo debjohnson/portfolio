@@ -1,11 +1,11 @@
 .nav {
-  height: 70px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   margin-left: $xl;
   margin-right: $xl;
+  padding: 1em 0;
 }
 
 .nav__item {
@@ -20,6 +20,10 @@
   &:last-of-type {
   	margin-right: 0;
   }
+
+  &:hover {
+    color: $bondi-blue;
+  }
 }
 
 .nav__item--logo {
@@ -27,7 +31,7 @@
   width: 30px;
   fill: $gray;
 
-  img {
+  svg {
     display: block;
   }
 
@@ -39,7 +43,7 @@
 @media #{$tablet-min} {
 	.nav {
 		flex-direction: column;
-    margin-top: 2em;
+    padding: 1em 0;
 	}
 
 	.nav__item--logo {

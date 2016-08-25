@@ -6,7 +6,7 @@
 
 .hero--huge {
   padding-top: 160px;
-  padding-bottom: 250px;  
+  padding-bottom: 250px;
 }
 
 .hero__title {
@@ -48,12 +48,15 @@
 .hero__background-image {
   background: linear-gradient(rgba(20,20,20,0.7) 0%, rgba(20,20,20,0.7) 100%),
   url(/images/image_management/sketches.jpg) no-repeat;
-  background-size: cover;
-  background-position: 0 -250px;
+  background-position: center -300px;
+  background-size: 100%;
   width: 100%;
   color: white;
-}
 
+  @media(max-width: 1190px) {
+    background-position: center -100px;
+  }
+}
 
 @media #{$tablet-min} {
   .hero {

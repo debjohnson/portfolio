@@ -1,7 +1,7 @@
 .project {
   padding-top: $xl;
 
-  &:nth-child(even) {
+  &:nth-child(odd) {
     background-color: $light-background;
   }
 }
@@ -27,7 +27,7 @@
 .project__title {
   font-weight: 500;
   font-size: 1.4em;
-  letter-spacing: 0.5;
+  letter-spacing: 0.5px;
 }
 
 .project__info {
