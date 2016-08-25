@@ -1,8 +1,10 @@
 header.nav
   = link_to "index.html", class: "nav__item--logo" do
-    = inline_svg "header-logo", class: "nav__item--logo"
+    = inline_svg "header-logo"
+
   .nav__list
     = link_to "Work", "/projects/image_management.html", class: "nav__item"
     = link_to "About", "/about.html", class: "nav__item"
     = link_to "Writing", "https://medium.com/@debjohnson", class: "nav__item"
+    = link_to "Resume", "resume.pdf", class: "nav__item"
     = mail_to "deborah.max.johnson@gmail.com", "Contact", class: "nav__item"
