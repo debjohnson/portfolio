@@ -25,10 +25,11 @@ main
   .project
     .project__content
       .project__image.project--ad__image
-        = image_tag "dashboard/dashboard.png", class: ""
+        = image_tag "dashboard/dashboard.jpg", class: ""
       .project__info
         h2.project__title Analytics Dashboard
-        p.project__summary Case study coming soon!
+        p Dashboard for Neon customers to view analytics and gain insight into the value Neon provides.
+        = link_to "Case Study", "/projects/dashboard.html", class: "project__link button--cta"
 
   .section.bdt
     .section__content.mt--large
