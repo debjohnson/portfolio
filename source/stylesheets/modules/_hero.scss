@@ -49,7 +49,7 @@ $hero-backgrounds: (
   neon-library: "linear-gradient(rgba(20,20,20,0.7) 0%, rgba(20,20,20,0.7) 100%),
         url(/images/image_management/sketches.jpg) no-repeat",
   dashboard: "linear-gradient(rgba(20,20,20,0.7) 0%, rgba(20,20,20,0.7) 100%),
-        url(/images/dashboard/dashboard.png) no-repeat",
+        url(/images/dashboard/dashboard-sketch.jpg) no-repeat",
 );
 
 @each $hero, $hero-image in $hero-backgrounds {
@@ -74,5 +74,4 @@ $hero-backgrounds: (
   .hero__description {
     display: block;
   }
-
 }
