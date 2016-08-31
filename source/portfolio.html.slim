@@ -1,0 +1,15 @@
+main
+  .section
+    .section.section__content
+      h1 Featured Projects
+    .section__content.mt--medium
+      .portfolio-projects
+        .portfolio__project
+          = link_to "/projects/image_management.html"
+            h3.portfolio-project__title Image Search Library
+            = image_tag "image_management/tag-image.png", class: "portfolio-thumbnail, inline-image--bordered"
+        .portfolio__project
+          = link_to "/projects/dashboard.html"
+            h3.portfolio-project__title Analytics Dashboard
+            = image_tag "dashboard/dashboard.jpg", class: "portfolio-thumbnail, inline-image--bordered"
+          
