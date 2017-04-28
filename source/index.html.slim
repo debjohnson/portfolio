@@ -31,6 +31,16 @@ main
         p Dashboard for Neon customers to view analytics and gain insight into the value Neon.
         = link_to "Case Study", "/projects/dashboard.html", class: "project__link button--cta"
 
+  .project
+    .project__content
+      .project__image.project--up__image
+        = image_tag "upstart/upstart-redesign.png"
+      .project__info
+        h2.project__title Upstart Design Challenge
+        p Design challenge completed as part of an interview for Upstart.
+        = link_to "Case Study", "/projects/upstart.html", class: "project__link button--cta"
+
+
   .section.bdt
     .section__content.mt--large
       h1 Design Philosophy and Process
@@ -39,16 +49,19 @@ main
       ul
         li.list--bulleted__item 
           strong Understand the problem 
-          ' to be solved and the person/people experiencing the problem. Talk to users and identify “jobs to be done”
+          ' to be solved and the person or people experiencing the problem. Do this at the beginning of every project!
         li.list--bulleted__item 
-          strong Collaborate cross-functionally 
-          ' to gain diverse perspectives
+          strong Talk to users 
+          'and identify “jobs to be done”
         li.list--bulleted__item 
           strong Prototype solutions 
           ' to validate assumptions and explore product directions
         li.list--bulleted__item 
           strong Use feedback 
-          ' from the people you’re designing for to guide the next iteration of the solution
+          ' from the people you’re designing for to guide the next iteration of your solution
+        li.list--bulleted__item 
+          strong Collaborate cross-functionally 
+          ' to gain diverse perspectives
       
       h3 Skills & Tools
       ul
@@ -56,5 +69,4 @@ main
         li.list--bulleted__item
           = link_to "Affinity Designer", "https://affinity.serif.com/en-us/designer/"
         li.list--bulleted__item InVision
-        li.list--bulleted__item Keynote
         li.list--bulleted__item HTML / CSS
