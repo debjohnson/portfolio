@@ -1,0 +1,91 @@
+main
+  .hero.hero__background-image--upstart
+    h3.hero__title Case Study
+    h1.hero__title Upstart: Design Challenge
+    h4.hero__subtitle Interface Design
+
+  .section
+    .section__content
+      h3 Background
+      p This is a “design challenge” that I completed as part of a job interview with Upstart, a personal loan startup that offers lower interest rates by taking into consideration data such as college education and job history.
+
+      h3 Challenge Prompt
+      blockquote
+        p One of the most important pages in our user flow is the “Got Rate” page. This is the page that comes after the application form, where we tell a user that he or she has qualified for our loan and the interest rate he or she has qualified for. This is the most important conversion point in our flow, since users decide whether they want to move forward with the loan or not.
+        p We would like to add some persuasive content to this page to encourage users to accept our loan. One idea is to tell users how much money they would save by refinancing their loan with Upstart.
+        p However, there‘s no fixed credit card payoff time on a credit card. While an Upstart loan is always paid off in 36 equal monthly payments, credit cards have small minimum payments that could leave someone in debt for many years. Of course, a user could choose to pay­ off their credit cards much faster. This makes it hard to say in a straightforward way how much money someone would save by switching from their credit card to an Upstart loan.
+
+      h3.mt--medium Instructions
+      .section__subtitle Part 1
+      blockquote
+        p Based on what you know, create a mockup of how you think this page should look. The mockup doesn’t need to include any features outside of the following information:
+        ul.numbers.mb--0
+          li The user’s credit card interest rate.
+          li The total amount the user would pay on their credit card debt if they just made minimum monthly payments.
+          li The total amount the user would pay on their credit card debt if they paid exactly each month the amount of their Upstart loan’s monthly payment
+          li The total amount the user would pay on their credit card debt if they paid $___ per month.
+      .section__subtitle Part 2
+      blockquote
+        p In addition, describe how you would start/approach this project if you were a full­-time product designer at Upstart.
+
+    .section__divider
+    
+    .section__content
+      h1.section__title Addressing the Challenge
+      p The first thing I did was clearly define the problem to be solved, as well as the goal and intended outcome.
+
+      ul.bullets
+        li <span><b> Problem </span></b>: Many users are not moving forward with Upstart’s loan offer when they get to the “get rate” page.
+        li <span><b> Goal </span></b>: Demonstrate the advantage of Upstart and convince users to move forward with the loan.
+        li <span><b> Intended Outcome </span></b>: Increase the number of users who choose to move forward and accept the loan from Upstart.
+
+      .section__subtitle Examine Existing Page
+      p I examined Upstart’s existing “get rate” page and made observations about what might be preventing users from moving forward.
+      = image_tag "upstart/got-rate--original.png"
+      figcaption.inline-image__caption Upstart's existing "got rate" page.
+
+      p.p--inline-list I identified two primary issues about the existing page:
+      ul.numbers
+        li There is no indication of how much money a user would save by using Upstart.
+        li There is no comparison of a user’s current credit card rate to the rate that Upstart offers.
+
+      .section__subtitle Proposed Redesign
+      = image_tag "upstart/upstart-redesign.png", class: "mt--medium"
+
+      p To solve the first problem that I identified (not knowing how much money a user would save), I made this the very first thing the user sees.
+
+      = image_tag "upstart/upstart-savings.png"
+      figcaption.inline-image__caption Money saved by using Upstart is highlighted at top of page
+
+      p To solve the second problem (not knowing how Upstart’s interest rate compares to a user’s credit card’s interest rate), I included a simple two-row comparison between Upstart’s rate vs. the rate of a credit card.
+
+      p One of the challenges noted in the prompt was that credit cards don’t have fixed monthly repayment schedules — users can pay as much or as little as they want each month, whereas Upstart has a fixed 36-month repayment schedule. I addressed this problem by adding a slider below the monthly payment amount in the credit card row so users could adjust it to the amount they pay each month. In my proposed redesign, the numbers, including how much the user would save, would dynamically update as the user moves the slider.
+
+      = image_tag "upstart/upstart-credit-comparison.png"
+      figcaption.inline-image__caption Comparison between Upstart vs. credit card
+
+      p The final change I made was to get rid of the adjustable loan amount slider, which took up a lot of real estate in the original design. In my proposed re-design, the user can still adjust the loan amount, but it’s less prominent. I made this decision under the assumption that the amount the user entered upon signing up was likely to be amount they needed. This assumption would need to be validated with user testing and data.
+
+      .inline-image
+        .inline-image--flex-container
+          = zoomable_image "upstart/upstart-slider.png"
+          = zoomable_image "upstart/upstart-congrats.png"
+        figcaption.inline-image__caption Adjustable loan amount slider (left) replaced with edit icon next to loan amount (right).
+
+      p 
+        ' In response to the second part of the design challenge, I outlined the process I would have used if I were a full-time employee (in response to the second part of the challenge) 
+        a href= "https://www.dropbox.com/s/cop7p532g1bwztp/Upstart%20-%20process.pdf?dl=0" here.
+
+    .section__divider--slim
+
+    .section__content
+      .section__subtitle What I learned
+      ul.bullets
+        li Making financial data easy for users to understand is challenging!
+        li It’s difficult to design (or in this case, re-design) without having any sense as to <span><i>why</i></span> users are behaving in a particular way. Without talking to users, doing user testing, or analyzing existing data, there is little to guide design decisions.
+      .section__subtitle What I'd Do Differently
+      ul.bullets
+        li Talk to users! Try to understand their frame of mind. What factors did they consider when making a decision on the “got rate” page?
+        li Work with a cross-functional team. Designing in a vacuum rarely results in the best possible design outcome.
+        li Make a prototype and do user testing, then iterate based on user feedback.
+        li Design with real data! This helps ensure that designs reflect what the designer intends, and work the way they expect them to.
