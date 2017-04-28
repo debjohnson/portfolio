@@ -62,3 +62,8 @@
     letter-spacing: 6.7px;
   }
 }
+
+.section__divider--slim {
+  @extend .section__divider;
+  padding: $medium 0;
+}

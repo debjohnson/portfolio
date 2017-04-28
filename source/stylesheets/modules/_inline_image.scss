@@ -19,3 +19,9 @@
   margin-top: 10px;
   text-align: center;
 }
+
+.inline-image--flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
