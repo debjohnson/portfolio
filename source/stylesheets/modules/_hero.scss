@@ -50,12 +50,13 @@ $hero-backgrounds: (
         url(/images/image_management/sketches.jpg) no-repeat",
   dashboard: "linear-gradient(rgba(20,20,20,0.7) 0%, rgba(20,20,20,0.7) 100%),
         url(/images/dashboard/dashboard-sketch.jpg) no-repeat",
+  upstart: "linear-gradient(rgba(20,20,20,0.7) 0%, rgba(20,20,20,0.7) 100%),
+        url(/images/upstart/upstart-hero.png) no-repeat",
 );
 
 @each $hero, $hero-image in $hero-backgrounds {
   .hero__background-image--#{$hero} {
     background: #{$hero-image};
-    background-position: center -300px;
     background-size: 100%;
     width: 100%;
     color: white;
@@ -64,6 +65,14 @@ $hero-backgrounds: (
       background-position: center -100px;
     }
   }
+}
+
+.hero__background-image--neon-library, .hero__background-image--dashboard {
+  background-position: center -300px;
+}
+
+.hero__background-image--upstart {
+  background-position: center center;
 }
 
 @media #{$tablet-min} {
