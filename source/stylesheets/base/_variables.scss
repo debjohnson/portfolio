@@ -25,6 +25,7 @@ $base-font-color: $gray;
 $xs: 14px;
 $small: 16px;
 $medium: 20px;
+$medium-large: 30px;
 $large: 40px;
 $xl: 80px;
 
@@ -41,6 +42,7 @@ $desktop: "(min-width 1280px)";
 $image-backgrounds: (
   im__image: #7385b1,
   ad__image: #45a6ad,
+  up__image: #e8e7e9,
 );
 
 $social-colors: (
