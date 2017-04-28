@@ -64,6 +64,10 @@ p {
   margin-bottom: $large;
 }
 
+.p--inline-list {
+  margin-bottom: 0;
+}
+
 span {
   display: inline-block;
 }
@@ -74,6 +78,14 @@ ul {
   line-height: $base-line-height;
   padding: 0;
   margin-bottom: $large;
+
+  &.bullets {
+    list-style-type: disc;
+  }
+
+  &.numbers {
+    list-style-type: decimal;
+  }
 }
 
 li {
@@ -88,4 +100,18 @@ img {
 
 strong {
   font-weight: bolder;
+}
+
+blockquote {
+  padding-left: 20px;
+  border-left: 1px solid black;
+  font-style: italic;
+
+  p {
+    &:first-child {
+      margin-top: 0;
+    }
+
+    margin-bottom: 0;
+  }
 }
