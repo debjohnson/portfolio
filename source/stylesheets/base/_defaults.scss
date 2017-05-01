@@ -14,6 +14,7 @@ html {
 
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 header {
@@ -103,9 +104,12 @@ strong {
 }
 
 blockquote {
+  margin-left: 0;
+  margin-bottom: 0;
   padding-left: 20px;
   border-left: 1px solid black;
   font-style: italic;
+  font-weight: 100;
 
   p {
     &:first-child {
@@ -113,5 +117,21 @@ blockquote {
     }
 
     margin-bottom: 0;
+  }
+}
+
+cite {
+  margin-top: $small;
+  font-weight: 100;
+  font-size: $xs;
+}
+
+// 
+// Temporary fix for mobile navigation!
+// 
+
+@media #{$tablet-min} {
+  body {
+    overflow-x: hidden;
   }
 }
