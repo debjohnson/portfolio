@@ -5,7 +5,7 @@
   align-items: center;
   margin-left: $xl;
   margin-right: $xl;
-  padding: 1em 0;
+  height: 6em;
 }
 
 .nav__item {
@@ -43,15 +43,35 @@
 
 @media #{$tablet-min} {
 	.nav {
-		flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
     padding: 1em 0;
 	}
 
-	.nav__item--logo {
-		margin: auto;
-	}
+  .nav__item {
+    font-size: 0.8em;
+
+    &:nth-child(3) {
+      margin-right: 0;
+    }
+  }
+
+  .nav__item--toggle {
+    display: none;
+  }
 
   .nav__list {
-    margin-top: 15px;
+    margin-top: 20px;
+    margin: auto;
   }
+
+	.nav__item--logo {
+		// margin: auto;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 20px;
+	}
 }
