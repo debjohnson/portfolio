@@ -1,7 +1,7 @@
 main
   .hero.hero--huge.section
     h1.hero__name Deb Johnson
-    .hero__description Product Designer in San Francisco
+    .hero__description Product Designer in San&nbsp;Francisco
 
   .section.section--centered
     .section__content
@@ -40,11 +40,14 @@ main
         p Design challenge completed as part of an interview for Upstart.
         = link_to "Case Study", "/projects/upstart.html", class: "project__link button--cta"
 
-
   .section.bdt
-    .section__content.mt--large
-      h1 Design Philosophy and Process
-      p Design, at its core, is about problem solving. I use a combination of design thinking and empathy to solve problems in a human-centered way. Some of the principles that guide my design process are:
+    .section__content.mt--medium
+      h1 Design Philosophy
+
+      blockquote "The most important product design work is the ugliest."
+      cite Paul Adams, VP Product @ Intercom
+
+      p.mt--medium-large Design, at its core, is about problem solving. I use a combination of design thinking and empathy to solve problems in a human-centered way. Some of the principles that guide my design process are:
 
       ul
         li.list--bulleted__item 
@@ -61,12 +64,4 @@ main
           ' from the people you’re designing for to guide the next iteration of your solution
         li.list--bulleted__item 
           strong Collaborate cross-functionally 
-          ' to gain diverse perspectives
-      
-      h3 Skills & Tools
-      ul
-        li.list--bulleted__item Sketch
-        li.list--bulleted__item
-          = link_to "Affinity Designer", "https://affinity.serif.com/en-us/designer/"
-        li.list--bulleted__item InVision
-        li.list--bulleted__item HTML / CSS
+          ' to gain diverse perspectives 
