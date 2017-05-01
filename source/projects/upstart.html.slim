@@ -15,7 +15,7 @@ main
         p We would like to add some persuasive content to this page to encourage users to accept our loan. One idea is to tell users how much money they would save by refinancing their loan with Upstart.
         p However, there‘s no fixed credit card payoff time on a credit card. While an Upstart loan is always paid off in 36 equal monthly payments, credit cards have small minimum payments that could leave someone in debt for many years. Of course, a user could choose to pay­ off their credit cards much faster. This makes it hard to say in a straightforward way how much money someone would save by switching from their credit card to an Upstart loan.
 
-      h3.mt--medium Instructions
+      h3.mt--medium-large Instructions
       .section__subtitle Part 1
       blockquote
         p Based on what you know, create a mockup of how you think this page should look. The mockup doesn’t need to include any features outside of the following information:
@@ -24,7 +24,7 @@ main
           li The total amount the user would pay on their credit card debt if they just made minimum monthly payments.
           li The total amount the user would pay on their credit card debt if they paid exactly each month the amount of their Upstart loan’s monthly payment
           li The total amount the user would pay on their credit card debt if they paid $___ per month.
-      .section__subtitle Part 2
+      .section__subtitle.mt--medium-large Part 2
       blockquote
         p In addition, describe how you would start/approach this project if you were a full­-time product designer at Upstart.
 
@@ -59,16 +59,16 @@ main
 
       p To solve the second problem (not knowing how Upstart’s interest rate compares to a user’s credit card’s interest rate), I included a simple two-row comparison between Upstart’s rate vs. the rate of a credit card.
 
-      p One of the challenges noted in the prompt was that credit cards don’t have fixed monthly repayment schedules — users can pay as much or as little as they want each month, whereas Upstart has a fixed 36-month repayment schedule. I addressed this problem by adding a slider below the monthly payment amount in the credit card row so users could adjust it to the amount they pay each month. In my proposed redesign, the numbers, including how much the user would save, would dynamically update as the user moves the slider.
-
       = image_tag "upstart/upstart-credit-comparison.png"
       figcaption.inline-image__caption Comparison between Upstart vs. credit card
 
-      p The final change I made was to get rid of the adjustable loan amount slider, which took up a lot of real estate in the original design. In my proposed re-design, the user can still adjust the loan amount, but it’s less prominent. I made this decision under the assumption that the amount the user entered upon signing up was likely to be amount they needed. This assumption would need to be validated with user testing and data.
+      p One of the challenges noted in the prompt was that credit cards don’t have fixed monthly repayment schedules — users can pay as much or as little as they want each month, whereas Upstart has a fixed 36-month repayment schedule. I addressed this problem by adding a slider below the monthly payment amount in the credit card row so users could adjust it to the amount they pay each month. In my proposed design, the corresponding numbers (including how much the user would save) would update dynamically.
+
+      p The final change I made was to get rid of the adjustable loan amount slider, which took up a good deal of real estate in the original design. In my proposed re-design, the user can still adjust the loan amount, but it’s less prominent. I made this decision under the assumption that the amount the user entered upon signing up was likely to be amount they needed. This assumption would need to be validated with user testing.
 
       .inline-image
         .inline-image--flex-container
-          = zoomable_image "upstart/upstart-slider.png"
+          = zoomable_image "upstart/adjust-slider.png"
           = zoomable_image "upstart/upstart-congrats.png"
         figcaption.inline-image__caption Adjustable loan amount slider (left) replaced with edit icon next to loan amount (right).
 
