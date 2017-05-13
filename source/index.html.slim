@@ -14,7 +14,7 @@ main
 
     .project__content
       .project__image.project--im__image
-        = image_tag "image_management/imp-main.png", class: ""
+        = link_to image_tag("image_management/imp-main.png"), "/projects/image_management.html"
 
       .project__info
         h2.project__title Image Search Library
@@ -25,7 +25,7 @@ main
   .project
     .project__content
       .project__image.project--ad__image
-        = image_tag "dashboard/dashboard.jpg"
+        = link_to image_tag("dashboard/dashboard.jpg"), "/projects/dashboard.html"
       .project__info
         h2.project__title Analytics Dashboard
         p Dashboard for Neon customers to view analytics and gain insight into the value Neon.
@@ -34,7 +34,7 @@ main
   .project
     .project__content
       .project__image.project--up__image
-        = image_tag "upstart/upstart-redesign.png"
+        = link_to image_tag("upstart/upstart-redesign.png"), "/projects/upstart.html"
       .project__info
         h2.project__title Upstart Design Challenge
         p Design challenge completed as part of an interview for Upstart.
