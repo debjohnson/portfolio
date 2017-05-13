@@ -71,6 +71,7 @@
     width: 100%;
     height: 200px;
     overflow: hidden;
+    flex: none;
   }
 
   .project__info {
@@ -79,5 +80,6 @@
     margin-right: auto;
     margin-top: $medium;
     margin-bottom: $medium;
+    flex: none;
   }
 }

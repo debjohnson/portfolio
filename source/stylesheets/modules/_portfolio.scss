@@ -18,3 +18,13 @@
     border-radius: 5px;
   }
 }
+
+@media #{$tablet-min} {
+  .portfolio__projects {
+    flex-direction: column;
+  }
+
+  .portfolio__project {
+    margin-top: $large;
+  }
+}
