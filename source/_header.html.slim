@@ -4,7 +4,16 @@ header.nav
 
   .nav__list
     = link_to "Portfolio", "/portfolio.html", class: "nav__item"
-    = link_to "About", "/about.html", class: "nav__item"
+    = link_to "About", "/about.html", class: "nav__item "
     = link_to "Writing", "https://medium.com/@debjohnson", class: "nav__item"
-    = link_to "Resume", "resume.pdf", class: "nav__item nav__item--toggle"
-    = mail_to "deb@debjohnson.design", "Contact", class: "nav__item nav__item--toggle"
+    = link_to "Resume", "resume.pdf", class: "nav__item nav__item--more"
+    = mail_to "deb@debjohnson.design", "Contact", class: "nav__item nav__item--more"
+    
+    .nav__item.nav__item--more-button
+      input#checkbox_toggle type="checkbox"
+      label.nav__item for="checkbox_toggle" More 
+      
+      ul.more-menu
+        li= link_to "Resume", "resume.pdf", class: "nav__item"
+        li= link_to "Contact", "deb@debjohnson.design", class: "nav__item"
+      .more-menu__pointer
