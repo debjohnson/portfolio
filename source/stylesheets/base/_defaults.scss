@@ -6,10 +6,6 @@ html {
   font-size: $base-font-size;
   font-family: $base-font-family;
   color: $base-font-color;
-
-  @media #{$mobile} {
-    font-size: $base-font-size * 0.8;
-  }
 }
 
 body {
@@ -63,6 +59,10 @@ p {
   font-weight: 100;
   line-height: $base-line-height;
   margin-bottom: $large;
+
+  &.p--mb-small {
+    margin-bottom: $small;
+  }
 }
 
 .p--inline-list {
@@ -133,5 +133,11 @@ cite {
 @media #{$tablet-min} {
   body {
     overflow-x: hidden;
+  }
+}
+
+main {
+  @media #{$mobile} {
+    font-size: $base-font-size * 0.8;
   }
 }
