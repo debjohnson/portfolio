@@ -1,11 +1,15 @@
 .nav {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
   align-items: center;
   margin-left: $xl;
   margin-right: $xl;
   height: 6em;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .nav__item {
@@ -19,12 +23,16 @@
   margin-right: $large;
 
   &:last-of-type {
-  	margin-right: 0;
+    margin-right: 0;
   }
 
   &:hover {
     color: $bondi-blue;
   }
+}
+
+.nav__item--more-button{
+  display: none;
 }
 
 .nav__item--logo {
@@ -37,40 +45,104 @@
   }
 
   &:hover {
-  	fill: url(#hover-gradient);
+    fill: url(#hover-gradient);
   }
 }
 
 @media #{$tablet-min} {
-	.nav {
+  .nav {
     justify-content: center;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
-    padding: 1em 0;
-	}
-
-  .nav__item {
-    font-size: 0.8em;
-
-    &:nth-child(3) {
-      margin-right: 0;
-    }
+    height: 6em;
   }
 
-  .nav__item--toggle {
-    display: none;
+  .nav__item {
+    font-size: 12px;
   }
 
   .nav__list {
     margin-top: 20px;
     margin: auto;
+    width: 60%;
   }
 
-	.nav__item--logo {
-    margin-left: auto;
-    margin-right: 0;
-    margin-top: auto;
-    margin-bottom: auto;
+  .nav__item--more {
+    display: none;
+  }
+
+  .nav__item--more-button {
+    display: block;
+    position: relative;
+  }
+
+  .nav__item--logo {
     width: 20px;
-	}
+    margin: auto;
+  }
+}
+
+input[type="checkbox"] {
+  display:none;
+}
+
+input[type=checkbox]:checked ~ ul {
+  display: block;
+}
+
+input[type=checkbox]:checked ~ .more-menu__pointer {
+  display: block;
+}
+
+.more-menu {
+  display: none;
+  position: absolute;
+  width: 106px;
+  top: 31px;
+  right: 0px;
+  margin: 0;
+  background: #FFF;
+  box-shadow: 0 1px 2px rgba(0,0,0,.25), 0 0 1px rgba(0,0,0,.35);
+  border-radius: 3px;
+  overflow: auto;
+
+  li {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 16px;
+    text-align: left;
+    line-height: 0;
+  }
+}
+
+.more-menu > li {
+  &:first-child {
+    margin-top: 15px;
+  }
+
+  &:last-child {
+    margin-bottom: 4px;
+  }
+}
+
+.more-menu__pointer {
+  display: none;
+  top: 8px;
+  right: 11px;
+  position: absolute;
+  clip: rect(0 18px 14px -4px);
+  margin-left: -6px;
+  margin-top: 10px;
+  
+  &:after {
+    transform: rotate(45deg) translate(6px,6px);
+    content: '';
+    display: block;
+    width: 14px;
+    height: 14px;
+    background: #FFF;
+    box-shadow: -1px -1px 1px -1px rgba(0,0,0,.44);
+  }
 }
