@@ -5,22 +5,22 @@ main
 
   .section.section--centered
     .section__content
-      p I'm a self-taught product designer with a passion for intuitive and elegant design. I use human-centered design approaches to deliver engaging user experiences that solve meaningful problems.
+      p I'm product designer with a passion for intuitive and elegant design. I use human-centered design approaches to deliver engaging user experiences that solve meaningful problems.
       = link_to "More About Me", "/about", class: "button--cta--centered"
   
-  .project
+  .section.section--border-top
     .section__heading
       h1 Featured Projects
 
-    .project__content
-      .project__image.project--im__image
-        = link_to image_tag("image_management/imp-main.png"), "/projects/image_management.html"
+  .project__content
+    .project__image.project--im__image
+      = link_to image_tag("image_management/imp-main.png"), "/projects/image_management.html"
 
-      .project__info
-        h2.project__title Image Search Library
-        p.project__summary An internal tool to make it easier for Neon's team members to browse and search for images.
+    .project__info
+      h2.project__title Image Search Library
+      p.project__summary Increasing team productivity: designing an internal tool to browse and search for images.
 
-        = link_to "Case Study", "/projects/image_management.html", class: "project__link button--cta"
+      = link_to "Case Study", "/projects/image_management.html", class: "project__link button--cta"
 
   .project
     .project__content
@@ -28,7 +28,7 @@ main
         = link_to image_tag("dashboard/dashboard.jpg"), "/projects/dashboard.html"
       .project__info
         h2.project__title Analytics Dashboard
-        p Dashboard for Neon customers to view analytics and gain insight into the value Neon.
+        p Making it easy for customers to understand the value they get from a product.
         = link_to "Case Study", "/projects/dashboard.html", class: "project__link button--cta"
 
   .project
@@ -37,7 +37,7 @@ main
         = link_to image_tag("upstart/upstart-redesign.png"), "/projects/upstart.html"
       .project__info
         h2.project__title Upstart Design Challenge
-        p Design challenge completed as part of an interview for Upstart.
+        p Improving conversion rates when customers decide whether to finance loans.
         = link_to "Case Study", "/projects/upstart.html", class: "project__link button--cta"
 
   .section.bdt
@@ -51,17 +51,18 @@ main
 
       ul
         li.list--bulleted__item 
-          strong Understand the problem 
-          ' to be solved and the person or people experiencing the problem. Do this at the beginning of every project!
+          strong Understand the problem to be solved  
+          ' and the person experiencing the problem.
         li.list--bulleted__item 
           strong Talk to users 
-          'and identify “jobs to be done”
+          ' and identify 
+          strong Jobs to be Done.
         li.list--bulleted__item 
           strong Prototype solutions 
           ' to validate assumptions and explore product directions
         li.list--bulleted__item 
           strong Use feedback 
-          ' from the people you’re designing for to guide the next iteration of your solution
+          ' from users to guide the next iteration of the solution
         li.list--bulleted__item 
           strong Collaborate cross-functionally 
-          ' to gain diverse perspectives 
+          ' to get diverse perspectives 
