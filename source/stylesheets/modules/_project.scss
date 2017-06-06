@@ -1,5 +1,6 @@
 .project {
   padding-top: $xl;
+  border-top: 1px solid $base-border-color;
 
   &:nth-child(odd) {
     background-color: $light-background;
@@ -37,11 +38,6 @@
 
 .project__link {
   margin-top: $small;
-
-  &:after {
-    content: ">";
-    margin-left: 4px;
-  }
 }
 
 .project__summary {
