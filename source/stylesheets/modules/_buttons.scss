@@ -10,7 +10,7 @@ button {
 .button--cta {
   padding: 8px 14px;
   border-radius: 5px;
-  border: 1.5px solid lighten($gray, 20);
+  border: 1px solid lighten($gray, 20);
   font-size: $small;
   font-weight: 100;
   cursor: pointer;
@@ -19,7 +19,7 @@ button {
   align-self: flex-start;
 
   &:hover {
-    border: 1.5px solid $base-accent-color;
+    border: 1px solid $base-accent-color;
     
       color: $base-accent-color;
   }
