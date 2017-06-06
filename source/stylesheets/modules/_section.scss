@@ -1,11 +1,9 @@
 .section {
-  padding: $large 0;
-  margin-bottom: $large;
+  padding: 5em 0;
 }
 
-.section__blockquote {
-  padding: $large 0;
-  margin: 0;
+.section__projects {
+  display: flex;
 }
 
 .section__content {
@@ -22,9 +20,8 @@
 }
 
 .section--centered {
-  border-top: 1px solid $base-border-color;
-  border-bottom: 1px solid $base-border-color;
   margin-bottom: 0;
+  border-top: 1px solid $base-border-color;
 }
 
 .section__heading {
@@ -46,6 +43,11 @@
   font-size: 24px;
   color: darken($light-gray, 20);
   margin-top: $medium;
+}
+
+.section__blockquote {
+  padding: $large 0;
+  margin: 0;
 }
 
 .section__wrapper {
