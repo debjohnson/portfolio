@@ -8,11 +8,11 @@ html {
   color: #606060; }
 
 body {
-  margin: 0;
-  overflow-x: hidden; }
+  margin: 0; }
 
 header {
-  text-align: center; }
+  text-align: center;
+  overflow-x: hidden; }
 
 h1, h2, h3, h4 {
   font-family: "Roboto", sans-serif;
@@ -105,7 +105,8 @@ cite {
   align-items: center;
   margin-left: 80px;
   margin-right: 80px;
-  height: 6em; }
+  height: 6em;
+  overflow: hidden; }
 
 .nav__list {
   display: flex;
@@ -214,12 +215,10 @@ input[type=checkbox]:checked ~ .more-menu__pointer {
     box-shadow: -1px -1px 1px -1px rgba(0, 0, 0, 0.44); }
 
 .section {
-  padding: 40px 0;
-  margin-bottom: 40px; }
+  padding: 5em 0; }
 
-.section__blockquote {
-  padding: 40px 0;
-  margin: 0; }
+.section__projects {
+  display: flex; }
 
 .section__content {
   max-width: 700px;
@@ -232,9 +231,8 @@ input[type=checkbox]:checked ~ .more-menu__pointer {
       padding-right: 3em; } }
 
 .section--centered {
-  border-top: 1px solid #D0D0D0;
-  border-bottom: 1px solid #D0D0D0;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  border-top: 1px solid #D0D0D0; }
 
 .section__heading {
   margin-bottom: 80px;
@@ -252,6 +250,10 @@ input[type=checkbox]:checked ~ .more-menu__pointer {
   font-size: 24px;
   color: #9d9d9d;
   margin-top: 20px; }
+
+.section__blockquote {
+  padding: 40px 0;
+  margin: 0; }
 
 .section__wrapper {
   margin-top: 80px; }
@@ -356,7 +358,8 @@ input[type=checkbox]:checked ~ .more-menu__pointer {
   .hero__description {
     display: block; } }
 .project {
-  padding-top: 80px; }
+  padding-top: 80px;
+  border-top: 1px solid #D0D0D0; }
   .project:nth-child(odd) {
     background-color: #F4F4F4; }
 
@@ -385,9 +388,6 @@ input[type=checkbox]:checked ~ .more-menu__pointer {
 
 .project__link {
   margin-top: 16px; }
-  .project__link:after {
-    content: ">";
-    margin-left: 4px; }
 
 .project__summary {
   margin-bottom: 40px; }
@@ -494,7 +494,7 @@ button {
 .button--cta, .button--cta--centered {
   padding: 8px 14px;
   border-radius: 5px;
-  border: 1.5px solid #939393;
+  border: 1px solid #939393;
   font-size: 16px;
   font-weight: 100;
   cursor: pointer;
@@ -502,7 +502,7 @@ button {
   display: inline-block;
   align-self: flex-start; }
   .button--cta:hover, .button--cta--centered:hover {
-    border: 1.5px solid #2fa5c6;
+    border: 1px solid #2fa5c6;
     color: #2fa5c6; }
 
 .button--cta--centered {
@@ -535,7 +535,8 @@ button {
   flex-shrink: 0;
   width: 100%;
   height: auto;
-  max-width: 300px; }
+  max-width: 300px;
+  padding-bottom: 30px; }
   .portfolio__project img {
     border-radius: 5px; }
 
